@@ -8,7 +8,8 @@ pathFrom = "/home/hovhannes/copyFrom/"
 pathTo = "/home/hovhannes/copyTo/"
 
 # r=root, d=directories, f = files
-sfor r, d, f in os.walk(pathFrom):
+
+for r, d, f in os.walk(pathFrom):
     for file in f:
         createFile(r, file, pathTo)
 
